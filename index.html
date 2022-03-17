@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>index</title>
+        <link rel="stylesheet" href="main.css">
+        <style type="text/css">
+            .interfaccia {
+
+                background-color: rgba(91, 10, 95, 0.4);
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                padding: 10px;
+                width: 200px;
+            }
+            .interfaccia input   {
+
+                width: 200px;
+                height: 20px;
+                appearance: none;
+                display: block;
+                
+                
+            }
+            .intefaccia select{
+                width: 100%;
+                display: block;
+            }
+            .interfaccia label{
+                display: block;
+
+            }
+            .interfaccia #input-naso{
+                display: block;
+
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="contenitore"> 
+            <div class="layer faccia"> 
+                <img src="assets/faccia_0.png" alt="immagine face">
+            </div>
+            <div class="layer ciglia"> 
+                <img src="assets/ciglia_0.png" alt="immagine face">
+            </div>
+            <div class="layer naso">
+                <img src="assets/naso_1.png" alt="immagine face">
+            </div>
+            <div class="layer bocca">
+                <img src="assets/bocca_1.png" alt="immagine face">
+
+            </div>
+            <div class="layer occhio occhio-sx">
+                <img src="assets/occhiosx_2.png" alt="immagine face">
+            </div>
+            <div class="layer occhio occhio-dx">
+                <img src="assets/occhiodx_2.png" alt="immagine face">
+
+            </div>
+        </div>
+        <div class="interfaccia "
+            <label for="#input-occhiosx"> occhio sinistro </label> 
+            <input id="input-occhiosx" type="range" value=0 min=0 max=2 step=1>
+
+            <label for="#input-occhiodx"> occhio destro </label> 
+            <input id="input-occhiodx" type="range" value=0 min=0 max=2 step=1>
+
+            <label for="#input-ciglia"> ciglia </label>
+            <select name="" id="input-ciglia">
+                <option value="0">mi dispiace</option>
+                <option value="1">incazzato</option>
+                <option value="2">zorro</option>
+                <option value="3">normal</option>
+                <option value="4">sid</option>
+                <option value="5">carnevale</option>
+                <option value="6">spaccone</option>
+
+            </select>
+
+            <label for="#input-naso"> naso </label>
+            <select name="" id="input-naso">
+                <option value="0">zig</option>
+                <option value="1">zag</option>
+                <option value="2">top</option>
+
+            </select>
+
+            <label for="#input-bocca">bocca</label>
+            <input id="input-bocca" type="number">
+            
+
+        </div>
+        <script>
+            document.querySelector("#input-occhiosx").addEventListener("input", function(e){
+                const v = (e.target.value)
+
+                const immagine_faccia = document.querySelector(".occhio-sx img")
+                immagine_faccia.src="assets/occhiosx_" + v + ".png"
+            })
+
+            document.querySelector("#input-occhiodx").addEventListener("input", function(e){
+                const v = (e.target.value)
+
+                const immagine_faccia = document.querySelector(".occhio-dx img")
+                immagine_faccia.src="assets/occhiodx_" + v + ".png"
+            })
+
+            document.querySelector("#input-ciglia").addEventListener("change", function(e){
+                const v = e.target.value
+
+                const immagine_faccia = document.querySelector(".ciglia img")
+                immagine_faccia.src = "assets/ciglia_" + v + ".png"
+            })
+
+            document.querySelector("#input-naso").addEventListener("change", function(e){
+                const v = e.target.value
+
+                const immagine_faccia = document.querySelector(".naso img")
+                immagine_faccia.src = "assets/naso_" + v + ".png"
+            })
+
+            document.querySelector("#input-bocca").addEventListener("change", function(e){
+                const v = e.target.value
+
+                const immagine_faccia = document.querySelector(".bocca img")
+                immagine_faccia.src = "assets/bocca_" + v + ".png"
+            })
+
+
+
+            
+
+            
+            
+           
+
+        </script>
+        
+    </body>
+</html>

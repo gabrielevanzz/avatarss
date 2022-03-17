@@ -1,0 +1,66 @@
+body{
+     
+    margin: 0;
+}
+.contenitore{
+    position: absolute; /* fissare valori?*/
+    
+    width: 400px;
+    height: 400px;
+    left: 50%; /*posizionamento sx*/
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+}
+.layer img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.faccia{
+    position: absolute;
+        
+        width: 100%;
+        height: 100%;
+}
+.ciglia{
+    position: absolute;
+        
+        
+}
+
+
+.naso{
+    position: absolute;
+    width: 105px;
+    height: 50px;
+   top: 75px;
+   left: 145px;
+
+}
+.bocca{
+
+    position: absolute;
+    width: 375px;
+    height: 275px;
+    left: 10px;
+    top: 75px;
+}
+.occhio{
+    position: absolute;
+}
+.occhio-sx{
+    position: absolute;
+    width: 111px;
+    height: 80px;
+    left: -10px;
+    top: 5px;
+
+}
+.occhio-dx{
+    position: absolute;
+    width: 111px;
+    height: 80px;
+    left: 300px;
+    top: 5px;
+}
