@@ -4,55 +4,234 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>index</title>
+        <title>let me speak</title>
         <link rel="stylesheet" href="main.css">
-        <style type="text/css">
-            .interfaccia {
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
 
-                background-color: rgba(91, 10, 95, 0.4);
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@200;400&display=swap" rel="stylesheet">
+
+        <style type="text/css">
+
+
+            h1{
                 position: absolute;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                padding: 10px;
-                width: 200px;
+                top: 4%;
+                
+                left: 5%;
+                width: 100%;
+                color: 0;
+                font-family: 'Anybody', cursive;
+                font-size: 27pt;
+            }
+
+            h2 {
+                position: absolute;
+                top: 10%;
+                right: 50%;
+                left: 5%;
+                font-family: 'Anybody', cursive;
+                font-size: 14pt;
+                
+
+            }
+        
+            .button {
+                background-color: rgb(248, 79, 234);
+                border: none;
+                border-radius: 3px;
+                color: rgb(3, 3, 3);
+                padding: 7px 10px;
+                text-align: center;
+                display: inline-block;
+                font-family: 'Anybody', cursive;
+                font-size: 16px;
+                font-style: normal;
+                margin-left:5%;
+                margin-top: 45%;
+                
+                 }
+
+            
+
+            
+
+
+             .buttonIndex {
+                 position: absolute;
+                color: white;
+                padding: 7px 10px;
+                text-align: center;
+                display: inline-block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                margin-left:90%;
+                top: 7%;
+                height: 20px;
+                
+                 }
+
+                
+
+                 .buttonX {
+                    border: none;
+                    border-radius: 3px;
+                    background-color: black;
+                    color: white;
+                    height: 30px;
+                    width: 60px;
+                    
+                    
+                    
+                 }
+
+                 .buttonX:hover {
+
+                    background-color: rgb(154, 43, 144);
+
+ }
+
+            
+            .interfaccia {
+                
+                position: absolute;
+
+                outline-width: 2px;
+                outline-color: black;
+                
+                left: 5%;
+                top: 24%;
+                
+                bottom: 27%;
+                padding: 6px;
+                width: 225px;
+                font-family: 'Anybody', cursive;
+
+                
+                
+
+            }
+            .interfaccia :hover {
+
+                color: rgb(154, 43, 144);
             }
             .interfaccia input   {
 
-                width: 200px;
+                width: 100%;
                 height: 20px;
                 appearance: none;
                 display: block;
                 
                 
             }
+            
             .intefaccia select{
+                
                 width: 100%;
+                height:50%;
                 display: block;
+                
+                
             }
             .interfaccia label{
                 display: block;
+                padding: 5px;
+                margin-top: 25px;
+                font-size: 11pt;
+                border-top: 2px solid rgb(0, 0, 0);
+
+
+            }
+            .interfaccia label #input-occhiosx{
+                display: block;
+                padding: 3px;
+                
+                font-size: 11pt;
 
             }
             .interfaccia #input-naso{
                 display: block;
+                font-size: 9pt;
+                width: 100%;
+                height: 20px;
 
 
+            }
+
+             #input-occhiosx {
+                margin-top: 7px;
+                width: 100%;
+                height: 1px;  
+                background-color: black;
+                
+                
+                
+            }
+
+            #input-occhiosx :hover {
+                color: black;
+                opacity: 0.3;
+            }
+
+             #input-occhiodx {
+                 
+                width: 100%;
+                height: 1px;
+                margin-top: 7px;
+                
+                background-color: black;
+                
+
+            }
+
+            #input-ciglia {
+                width: 100%;
+                height: 20px;
+            }
+            #input-bocca {
+                width: 215px;
+                height: 15px;
+                border-width: 1px;
+            }
+            
+            .myDiv {
+                position:absolute;
+                top: 20%;
             }
 
         </style>
     </head>
     <body>
+        
+            <h1>Let me speak </h1>
+            <h2>avatar generator</h2>
+          
+
+                
+                <div class="buttonIndex">
+                    <input  class="buttonX" type="button" onclick="location.href='https://ixd-supsi.github.io/avatargenerator/';" value="Index" />
+
+                </div>
+               
+       
+        
         <div class="contenitore"> 
             <div class="layer faccia"> 
                 <img src="assets/faccia_0.png" alt="immagine face">
             </div>
+
+            
             <div class="layer ciglia"> 
                 <img src="assets/ciglia_0.png" alt="immagine face">
             </div>
             <div class="layer naso">
                 <img src="assets/naso_1.png" alt="immagine face">
             </div>
+
+
             <div class="layer bocca">
                 <img src="assets/bocca_1.png" alt="immagine face">
 
@@ -65,35 +244,47 @@
 
             </div>
         </div>
-        <div class="interfaccia "
+        
+        <div class="interfaccia">
+
+         
+        
             <label for="#input-occhiosx"> occhio sinistro </label> 
-            <input id="input-occhiosx" type="range" value=0 min=0 max=2 step=1>
+            
+            <input id="input-occhiosx" type="range" value=0 min=0 max=2 step=1 >
 
             <label for="#input-occhiodx"> occhio destro </label> 
             <input id="input-occhiodx" type="range" value=0 min=0 max=2 step=1>
-
+        
             <label for="#input-ciglia"> ciglia </label>
             <select name="" id="input-ciglia">
-                <option value="0">mi dispiace</option>
+                <option value="0">dispiaciuto</option>
                 <option value="1">incazzato</option>
                 <option value="2">zorro</option>
-                <option value="3">normal</option>
+                <option value="3">normale</option>
                 <option value="4">sid</option>
-                <option value="5">carnevale</option>
+                <option value="5">fantasia</option>
                 <option value="6">spaccone</option>
+                <option value="7">ego</option>
+                <option value="8">zarro</option>
+                <option value="9">anziano</option>
+               
 
             </select>
 
-            <label for="#input-naso"> naso </label>
+            <label for="#input-naso">naso </label>
             <select name="" id="input-naso">
-                <option value="0">zig</option>
-                <option value="1">zag</option>
-                <option value="2">top</option>
+                <option value="0">piccolo</option>
+                <option value="1">grande</option>
+                <option value="2">discreto</option>
+                <option value="3">lungo</option>
+
+                
 
             </select>
 
-            <label for="#input-bocca">bocca</label>
-            <input id="input-bocca" type="number">
+            <label for="#input-bocca">pronuncia una lettera</label>
+            <input id="input-bocca" type="text" minlength="1" maxlength="1">
             
 
         </div>
@@ -126,22 +317,71 @@
                 immagine_faccia.src = "assets/naso_" + v + ".png"
             })
 
+            //document.querySelector("#input-bocca").addEventListener("change", function(e){ //e nella parentesi
+                //const v = e.target.value
+                //const v = myTextInput.target.value;
+
+
+                //const immagine_faccia = document.querySelector(".bocca img")
+                //immagine_faccia.src = "assets/bocca_" + v + ".png"
+            //})
+
             document.querySelector("#input-bocca").addEventListener("change", function(e){
-                const v = e.target.value
-
+                 //e nella parentesi
+                 
+                
+                
+                if (e.target.value == "a" || e.target.value == "e" || e.target.value == "i" ) { 
                 const immagine_faccia = document.querySelector(".bocca img")
-                immagine_faccia.src = "assets/bocca_" + v + ".png"
+                immagine_faccia.src = "assets/bocca_a.png"
+                }
+                
+                else if (e.target.value == "q" || e.target.value == "w" || e.target.value == "u" )  {
+                const immagine_faccia = document.querySelector(".bocca img")
+                immagine_faccia.src = "assets/bocca_5.png"
+
+                }
+                else if (e.target.value == "v" || e.target.value == "f" ) {
+                const immagine_faccia = document.querySelector(".bocca img")
+                immagine_faccia.src = "assets/bocca_6.png"
+
+                }
+                else if (e.target.value == "b" || e.target.value == "m" || e.target.value == "p") {
+                const immagine_faccia = document.querySelector(".bocca img")
+                immagine_faccia.src = "assets/bocca_3.png"
+
+                }
+
+                else if (e.target.value == "o") {
+                const immagine_faccia = document.querySelector(".bocca img")
+                immagine_faccia.src = "assets/bocca_4.png"
+
+                }
+
+                else if (e.target.value == "r" || e.target.value == "l") {
+                const immagine_faccia = document.querySelector(".bocca img")
+                immagine_faccia.src = "assets/bocca_c.png"
+
+                } 
+                else if (e.target.value == "c" || e.target.value == "d" || e.target.value == "g"|| e.target.value == "k" || e.target.value == "n"|| e.target.value == "s" || e.target.value == "t" || e.target.value == "x"|| e.target.value == "y" || e.target.value == "z") {
+                const immagine_faccia = document.querySelector(".bocca img")
+                immagine_faccia.src = "assets/bocca_b.png"
+
+                }
+                
+                
+                
+        
+
+                
             })
-
-
-
             
-
+            
             
             
            
 
         </script>
-        
+
     </body>
 </html>
